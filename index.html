@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #f4f6f8;
+}
+
+
+header {
+    background-color: #ff6f91;
+    padding: 15px 30px;
+}
+
+
+header h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #ff6f91;
+}
+
+.home {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.home h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.home p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+.card img {
+    border-radius: 8px;
+}
+
+
+.card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+
+.card p {
+    font-size: 18px;
+    color: #ff6f91;
+    font-weight: bold;
+}
+
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #ff4f79;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <center><h1>Gift Shop Website</h1></center>
+    <nav  >
+       <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+        <a href="button.html">Add to Card</a>
+      
+    </nav>
+</header>
+<section class="home">
+    <h2>perfect gifts for every occasion</h2>
+    <p>Handpicked gifts that bring smiles</p>
+
+    <div class="products">
+        <div class="card">
+            <img src="teddy bear.avif" alt="Teddy Bear"height="300" width="250">
+            <h3>Teddy Bear</h3>
+            <p>₹300</p>
+            <button  type="Add to Cart" onclick="sendMessage()">Add to Cart</button>
+            <script>
+                function sendMessage() {
+                    alert ("add to the card sucessfully");
+                }
+            </script>
+
+        </div>
+        <div class="card">
+            <img src="chocolate.jpg" alt="Chocolate"height="300" width="250">
+            <h3>Chocolate Box</h3>
+            <p>₹100</p>
+             <button  type="Add to Cart" onclick="sendMessage()">Add to Cart</button>
+            <script>
+                function sendMessage() {
+                    alert ("add to the card sucessfully");
+                }
+            </script>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Sweet Gift Shop</p>
+</footer>
+
+</section>
+<script src="javascript.js"></script>
+    
+</body>
+</html>

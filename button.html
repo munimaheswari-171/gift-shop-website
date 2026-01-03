@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <span id="cartCount">0</span> Items
+
+    <div class="product-card">
+    <img src="teddy bear.avif" alt="Teddy Bear"height="300" width="250">
+    <h3>Teddy Bear</h3>
+    <p>₹300</p>
+
+    <button onclick="addToCart('Teddy Bear', 300)">
+        Add to Cart
+    </button>
+</div>
+
+<div class="product-card">
+    <img src="chocolate.jpg"  alt="chocolate"height="300" width="250">
+    <h3>Chocolate Box</h3>
+    <p>₹100</p>
+
+    <button onclick="addToCart('Chocolate Box', 100)">
+        Add to Cart
+    </button>
+</div>
+<script>
+    let cart = [];   // empty cart
+
+    function addToCart(productName, price) {
+        let item = {
+            name: productName,
+            price: price
+        };
+
+        cart.push(item);
+
+        alert(productName + " added to cart!");
+
+        console.log(cart); // check in browser console
+    }
+</script>
+
+</body>
+</html>
+
